@@ -42,8 +42,8 @@
           <div class="mobile-pop-trigger mobile-combo-trigger" aria-label="Mobile story and food review actions">
             <button class="mobile-combo-action mobile-combo-story" data-open-modal="storyModal" type="button" aria-haspopup="dialog">
               <img src="assets/chef-circle-feature.jpeg" alt="Chef Anthony Caldwell">
-              <span>Chopped Story</span>
-              <strong>Open story</strong>
+              <span>Featured on Chopped</span>
+              <strong>Open Story</strong>
             </button>
             <button class="mobile-combo-action mobile-combo-video" data-open-modal="videoModal" type="button" aria-haspopup="dialog">
               <span>Food Review</span>
@@ -62,7 +62,10 @@
     <dialog class="story-modal" id="storyModal">
       <div class="story-modal-card">
         <button class="story-modal-close" id="storyModalClose" type="button" aria-label="Close story">×</button>
-        <img src="assets/chef-circle-feature.jpeg" alt="Chef Anthony Caldwell of 50Kitchen">
+        <div class="story-modal-visual">
+          <img class="story-modal-chef" src="assets/chef-circle-feature.jpeg" alt="Chef Anthony Caldwell of 50Kitchen">
+          <img class="story-modal-logo" src="assets/50kitchen-logo.png" alt="50Kitchen logo">
+        </div>
         <div class="chopped-feature"><span>Featured on Chopped</span><strong>Martha Rules</strong></div>
         <h2>Chef-tested flavor with a real story.</h2>
         <p>Chef Anthony Caldwell brought 50Kitchen's Southern-meets-Asian point of view to Food Network's <strong>Chopped</strong> in the Martha Rules episode — now he brings that same bold, creative food to the Triangle.</p>
