@@ -711,3 +711,49 @@ section { padding: 88px 0; }
     padding-top: 72px;
   }
 }
+
+@media (max-width: 720px) {
+  .mobile-logo-widget {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 8px;
+    padding: 16px 18px;
+    min-height: 154px;
+    text-align: center;
+    border-color: rgba(255,255,255,.42);
+    background: linear-gradient(135deg, rgba(18,14,10,.70), rgba(18,14,10,.38));
+  }
+  .mobile-logo-widget img {
+    width: min(245px, 84%);
+    height: auto;
+    margin: 0;
+    border-radius: 0;
+    background: transparent;
+    filter: drop-shadow(0 12px 22px rgba(0,0,0,.42));
+  }
+  .mobile-logo-widget span {
+    color: #fff8ed;
+    font-size: .82rem;
+    line-height: 1.12;
+    font-weight: 950;
+    letter-spacing: .095em;
+    text-transform: uppercase;
+    text-shadow: 0 2px 18px rgba(0,0,0,.50);
+  }
+  .mobile-logo-widget strong {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 38px;
+    padding: 0 22px;
+    border-radius: 0;
+    color: #fff8ed;
+    background: linear-gradient(135deg, #f28722, #d66b1f);
+    font-size: .78rem;
+    font-weight: 950;
+    letter-spacing: .09em;
+    text-transform: uppercase;
+    box-shadow: inset 1px 1px 1px rgba(255,255,255,.32), 0 12px 28px rgba(0,0,0,.26);
+  }
+}
