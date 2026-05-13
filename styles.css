@@ -107,8 +107,8 @@ img { max-width: 100%; display: block; }
   display: grid;
   grid-template-columns: minmax(470px, 560px) minmax(430px, 520px);
   align-items: end;
-  justify-content: space-between;
-  gap: clamp(18px, 5vw, 82px);
+  justify-content: center;
+  gap: clamp(18px, 4vw, 58px);
 }
 .hero-popup-trigger { cursor: pointer; }
 .hero-popup-trigger:focus-visible {
@@ -128,8 +128,8 @@ img { max-width: 100%; display: block; }
   border-radius: 34px;
   max-width: 560px;
   width: 100%;
-  justify-self: start;
-  transform: translate(-142px, -58px);
+  justify-self: center;
+  transform: translate(0, -34px);
 }
 .hero-circle-img {
   width: clamp(126px, 11vw, 168px);
@@ -190,8 +190,8 @@ img { max-width: 100%; display: block; }
   padding: clamp(12px, 1.6vw, 18px);
   border-radius: 26px;
   width: 100%;
-  justify-self: end;
-  transform: translate(142px, -62px);
+  justify-self: center;
+  transform: translate(0, -34px);
 }
 .video-label {
   display: flex;
@@ -248,7 +248,7 @@ img { max-width: 100%; display: block; }
 .hero-center-cta {
   position: absolute;
   left: 50%;
-  bottom: clamp(120px, 18vh, 210px);
+  bottom: clamp(42px, 7vh, 82px);
   z-index: 4;
   transform: translateX(-50%);
   width: min(360px, calc(100vw - 40px));
