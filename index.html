@@ -8,27 +8,92 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="topbar"><div class="topbar-inner"><span>Triangle Area food truck + catering by Chef Anthony Caldwell</span><div class="socials"><a href="tel:+19849998566">(984) 999-8566</a><a href="mailto:info@50kitchen.com">info@50kitchen.com</a><a href="https://www.instagram.com/chef_50/">Instagram</a></div></div></div>
   <header class="site-header"><div class="nav-inner"><a class="brand" href="index.html"><img src="assets/50kitchen-logo.png" alt="50Kitchen"></a><button class="mobile-toggle" aria-expanded="false">Menu</button><nav class="nav-links"><a class="active" href="index.html">Home</a><a href="menu.html">Menu</a><a href="catering.html">Catering</a><a href="schedule.html">Find Us</a><a href="about.html">Chef Story</a><a href="press.html">Press</a><a href="contact.html">Contact</a></nav><div class="nav-actions"><a class="btn btn-ghost" href="https://order.toasttab.com/online/50k-new-3108-glenn-rd">Order</a><a class="btn btn-primary" href="contact.html">Book the Truck</a></div></div></header>
 
   <main>
-    <section class="hero">
-      <div class="hero-inner">
-        <div class="hero-copy-block">
+    <section class="hero hero-photo" aria-label="50Kitchen hero">
+      <div class="hero-inner hero-photo-inner hero-editorial">
+        <div class="hero-story-card hero-popup-trigger" data-open-modal="storyModal" role="button" tabindex="0" aria-label="Open Chef Anthony story">
+          <img class="hero-circle-img" src="assets/chef-circle-feature.jpeg" alt="Chef Anthony Caldwell of 50Kitchen">
           <div class="chopped-feature"><span>Featured on Chopped</span><strong>Martha Rules</strong></div>
-          <div class="eyebrow">Beautiful food for beautiful people</div>
-          <h1>Southern soul. Asian flavor.</h1>
-          <p class="hero-copy">Chef Anthony Caldwell brings Chopped-tested creativity to bold Southern-Asian street food across the Triangle.</p>
-          <div class="hero-actions"><a class="btn btn-primary" href="menu.html">Menu</a><a class="btn btn-gold" href="schedule.html">Find Us</a><a class="btn btn-ghost hero-ghost" href="catering.html">Catering</a></div>
-          <div class="hero-proof hero-proof-inline">
-            <span>Chopped-tested craft</span>
-            <span>Triangle catering</span>
+          <h1>Chef-tested flavor with a real story.</h1>
+          <p class="hero-copy">Chef Anthony Caldwell brought 50Kitchen's Southern-meets-Asian point of view to Food Network's <strong>Chopped</strong> in the Martha Rules episode — now he brings that same bold, creative food to the Triangle.</p>
+          <div class="hero-actions hero-story-actions"><a class="btn btn-gold" href="menu.html">View Menu</a><a class="btn btn-ghost hero-ghost" href="catering.html">Book Catering</a></div>
+        </div>
+        <div class="hero-video-card hero-popup-trigger" data-open-modal="videoModal" role="button" tabindex="0" aria-label="Open food review video">
+          <div class="video-label"><span>Food review</span><strong>Watch the feature</strong></div>
+          <div class="video-frame">
+            <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2F50kitchen%2Fvideos%2F680144074672630%2F&show_text=false&width=560&t=0" width="560" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true" title="50Kitchen food review video"></iframe>
           </div>
+          <div class="hero-video-actions"><a class="hero-glass-chip" href="schedule.html">Find the Truck</a><a class="hero-glass-chip" href="contact.html">Contact 50Kitchen</a></div>
+        </div>
+        <div class="hero-center-cta hero-popup-trigger" data-open-modal="quickModal" role="button" tabindex="0" aria-label="Open quick actions">
+          <img src="assets/50kitchen-logo.png" alt="50Kitchen logo">
+          <a class="hero-center-main" href="#faith-flavor">Hear My Story</a>
+          <div class="hero-center-links">
+            <a href="menu.html">Menu</a>
+            <a href="catering.html">Booking</a>
+          </div>
+        </div>
+        <div class="mobile-pill-stack" aria-label="Mobile hero actions">
+          <button class="mobile-story-trigger mobile-pop-trigger" data-open-modal="storyModal" type="button" aria-haspopup="dialog">
+            <img src="assets/chef-circle-feature.jpeg" alt="Chef Anthony Caldwell">
+            <span>Featured on Chopped</span>
+            <strong>Tap to open story</strong>
+          </button>
+          <button class="mobile-pop-trigger mobile-video-trigger" data-open-modal="videoModal" type="button" aria-haspopup="dialog">
+            <span>Food Review</span>
+            <strong>Tap to watch</strong>
+          </button>
+          <button class="mobile-pop-trigger mobile-quick-trigger" data-open-modal="quickModal" type="button" aria-haspopup="dialog">
+            <img src="assets/50kitchen-logo.png" alt="50Kitchen logo">
+            <span>Quick Actions</span>
+            <strong>Menu · Booking · Story</strong>
+          </button>
         </div>
       </div>
     </section>
 
-    <section><div class="section-inner grid-2">
+    <dialog class="story-modal" id="storyModal">
+      <div class="story-modal-card">
+        <button class="story-modal-close" id="storyModalClose" type="button" aria-label="Close story">×</button>
+        <img src="assets/chef-circle-feature.jpeg" alt="Chef Anthony Caldwell of 50Kitchen">
+        <div class="chopped-feature"><span>Featured on Chopped</span><strong>Martha Rules</strong></div>
+        <h2>Chef-tested flavor with a real story.</h2>
+        <p>Chef Anthony Caldwell brought 50Kitchen's Southern-meets-Asian point of view to Food Network's <strong>Chopped</strong> in the Martha Rules episode — now he brings that same bold, creative food to the Triangle.</p>
+        <div class="story-modal-actions"><a class="btn btn-gold" href="menu.html">View Menu</a><a class="btn btn-dark" href="catering.html">Book Catering</a></div>
+      </div>
+    </dialog>
+
+    <dialog class="story-modal feature-modal" id="videoModal">
+      <div class="story-modal-card feature-modal-card video-modal-card">
+        <button class="story-modal-close" type="button" data-close-modal aria-label="Close video">×</button>
+        <div class="chopped-feature"><span>Food review</span><strong>Watch the feature</strong></div>
+        <h2>See the food in motion.</h2>
+        <p>Open the 50Kitchen food review in a larger view, then jump straight to the truck schedule or contact page when you're ready.</p>
+        <div class="video-frame modal-video-frame">
+          <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2F50kitchen%2Fvideos%2F680144074672630%2F&show_text=false&width=560&t=0" width="560" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true" title="50Kitchen food review video larger view"></iframe>
+        </div>
+        <div class="story-modal-actions"><a class="btn btn-gold" href="schedule.html">Find the Truck</a><a class="btn btn-dark" href="contact.html">Contact 50Kitchen</a></div>
+      </div>
+    </dialog>
+
+    <dialog class="story-modal feature-modal" id="quickModal">
+      <div class="story-modal-card feature-modal-card quick-modal-card">
+        <button class="story-modal-close" type="button" data-close-modal aria-label="Close quick actions">×</button>
+        <img class="modal-logo" src="assets/50kitchen-logo.png" alt="50Kitchen logo">
+        <div class="chopped-feature"><span>Start here</span><strong>Choose your lane</strong></div>
+        <h2>What do you want next?</h2>
+        <p>Read Chef Anthony's story, browse the menu, or start a booking request for your next event.</p>
+        <div class="quick-modal-grid">
+          <a class="btn btn-gold" href="#faith-flavor">Hear My Story</a>
+          <a class="btn btn-dark" href="menu.html">View Menu</a>
+          <a class="btn btn-primary" href="catering.html">Book Catering</a>
+        </div>
+      </div>
+    </dialog>
+
+    <section id="faith-flavor"><div class="section-inner grid-2">
       <div>
         <div class="section-kicker">The 50Kitchen promise</div>
         <h2>Faith, flavor, and a second chance on wheels.</h2>
