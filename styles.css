@@ -678,10 +678,11 @@ section { padding: 88px 0; }
 .featured-menu-card.compact-copy .menu-tag { font-size: .58rem; }
 
 @media (max-width: 720px) {
-  body { background: #120e0a; }
-  main { background: #120e0a; }
+  body { background: var(--cream); }
+  main { background: var(--cream); }
   .site-header { background: #120e0a; }
   .hero {
+    background: #120e0a;
     min-height: calc(100dvh - 72px + 140px) !important;
     height: calc(100dvh - 72px + 140px) !important;
   }
@@ -691,5 +692,10 @@ section { padding: 88px 0; }
   }
   .mobile-pill-stack {
     transform: translateY(-128px);
+  }
+  #faith-flavor {
+    background: var(--cream);
+    color: var(--ink);
+    padding-top: 72px;
   }
 }
