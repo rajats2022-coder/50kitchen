@@ -665,14 +665,14 @@ section { padding: 88px 0; }
   .featured-menu-copy { left: 12px; right: 12px; bottom: 12px; padding: 14px; border-radius: 16px; }
 }
 
-.insta-fallback {
-  min-height: 220px;
-  display: grid;
-  place-items: center;
-  padding: 24px;
+.featured-menu-card.compact-copy .featured-menu-copy {
+  left: 14px;
+  right: 14px;
+  bottom: 14px;
+  padding: 12px 14px;
   border-radius: 16px;
-  color: var(--ink);
-  background: linear-gradient(135deg, #fff, #f3eadc);
-  font-weight: 950;
-  text-align: center;
 }
+.featured-menu-card.compact-copy .featured-menu-copy header { margin: 4px 0 5px; }
+.featured-menu-card.compact-copy .featured-menu-copy h3 { font-size: clamp(.95rem, 1.35vw, 1.18rem); }
+.featured-menu-card.compact-copy .featured-menu-copy p { font-size: .82rem; line-height: 1.28; }
+.featured-menu-card.compact-copy .menu-tag { font-size: .58rem; }
