@@ -83,3 +83,13 @@ document.querySelectorAll('dialog a[href^="#"]').forEach((link) => {
     window.setTimeout(() => target.scrollIntoView({ behavior: 'smooth', block: 'start' }), 60);
   });
 });
+
+
+function processInstagramEmbeds() {
+  if (window.instgrm?.Embeds?.process) window.instgrm.Embeds.process();
+}
+window.addEventListener('load', () => {
+  processInstagramEmbeds();
+  window.setTimeout(processInstagramEmbeds, 800);
+  window.setTimeout(processInstagramEmbeds, 2200);
+});

@@ -664,3 +664,15 @@ section { padding: 88px 0; }
   .featured-menu-card, .featured-menu-card.large { min-height: 390px; border-radius: 20px; }
   .featured-menu-copy { left: 12px; right: 12px; bottom: 12px; padding: 14px; border-radius: 16px; }
 }
+
+.insta-fallback {
+  min-height: 220px;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  border-radius: 16px;
+  color: var(--ink);
+  background: linear-gradient(135deg, #fff, #f3eadc);
+  font-weight: 950;
+  text-align: center;
+}
