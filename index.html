@@ -39,15 +39,17 @@
           </div>
         </div>
         <div class="mobile-pill-stack" aria-label="Mobile hero actions">
-          <button class="mobile-story-trigger mobile-pop-trigger" data-open-modal="storyModal" type="button" aria-haspopup="dialog">
-            <img src="assets/chef-circle-feature.jpeg" alt="Chef Anthony Caldwell">
-            <span>Featured on Chopped</span>
-            <strong>Tap to open story</strong>
-          </button>
-          <button class="mobile-pop-trigger mobile-video-trigger" data-open-modal="videoModal" type="button" aria-haspopup="dialog">
-            <span>Food Review</span>
-            <strong>Tap to watch</strong>
-          </button>
+          <div class="mobile-pop-trigger mobile-combo-trigger" aria-label="Mobile story and food review actions">
+            <button class="mobile-combo-action mobile-combo-story" data-open-modal="storyModal" type="button" aria-haspopup="dialog">
+              <img src="assets/chef-circle-feature.jpeg" alt="Chef Anthony Caldwell">
+              <span>Chopped Story</span>
+              <strong>Open story</strong>
+            </button>
+            <button class="mobile-combo-action mobile-combo-video" data-open-modal="videoModal" type="button" aria-haspopup="dialog">
+              <span>Food Review</span>
+              <strong>Watch video</strong>
+            </button>
+          </div>
           <button class="mobile-pop-trigger mobile-quick-trigger mobile-logo-widget" data-open-modal="quickModal" type="button" aria-haspopup="dialog">
             <img src="assets/50kitchen-logo.png" alt="50Kitchen logo">
             <span>The epitome of extravagance and culinary mastery</span>
